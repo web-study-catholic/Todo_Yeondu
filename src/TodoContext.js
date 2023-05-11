@@ -15,6 +15,8 @@ switch(action.type) {
   case 'UPDATE' :
     return state.map(todo => 
       todo.id === action.id ? {...todo, text : action.text} : todo);
+  case 'REMOVE_ALL' :
+    return [];
   default :
       throw new Error(`Unhandled action type : ${action.type}`);
 }
