@@ -4,6 +4,7 @@ import TodoHead from '../components/TodoHead';
 import TodoList from '../components/TodoList';
 import TodoCreate from '../components/TodoCreate';
 import { TodoProvider } from '../TodoContext';
+import { Kakao } from '../components/kakaologin';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,6 +18,7 @@ function Home() {
       <GlobalStyle />
       <TodoTemplate>
         <TodoHead />
+        <Kakao/>
         <TodoList />
         <TodoCreate />
       </TodoTemplate>
